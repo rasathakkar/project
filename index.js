@@ -48,7 +48,7 @@ mongoose.connect(process.env.MONGO_URL, {
   }).
     then(result => {
       console.log("DB Connected!");
-      app.listen(8500, () => {
+      app.listen(process.env.PORT, () => {
         console.log("App Is Running On 8500.");
       })
     }).
